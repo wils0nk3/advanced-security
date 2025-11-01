@@ -1,34 +1,35 @@
 # 🛡️ advanced-security
 
-**Public documentation of high-level cybersecurity protocols, threat modeling, and forensic methods securing the Rules of Conduct Civil Rights App.**
+**Documentation of advanced security governance, proactive threat modeling, and forensic protocols for systems requiring maximum data integrity and defensibility.**
 
-This repository moves beyond the technical stack to detail the advanced security governance and assurance processes essential for a system handling highly sensitive, litigation-grade data.
-
-***
-
-## I. 🔑 Evidence Integrity & Chain of Custody
-
-This section directly addresses the legal requirement for producing verifiable, tamper-proof evidence in court.
-
-* **Cryptographic Hashing (SHA-256):** Public functions and pseudo-code demonstrating how an immutable hash is generated immediately upon evidence capture, serving as the unique digital fingerprint of the data.
-* **Digital Notarization Logic:** Pseudo-code showing how evidence hashes are logged with verifiable timestamps to create a tamper-evident sequence, modeling a simplified **blockchain/ledger** for evidence.
-* **Data Export Verification:** Documentation on the secure process for packaging evidence that includes hash verification manifests for integrity checks during legal discovery.
+This repository details high-level security assurance processes, demonstrating commitment to maintaining system integrity against sophisticated adversarial actions across various projects.
 
 ***
 
-## II. 🚨 Threat Modeling & Governance
+## I. 🔑 Integrity & Forensic Protocols
 
-This showcases your proactive management approach, a key component of your **Cybersecurity Management** expertise.
+This section focuses on the methods used to secure data against compromise and prove its authenticity—a cornerstone of advanced security and litigation-readiness.
 
-* **STRIDE Threat Modeling:** Publicly documented analysis identifying potential threats related to **Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege** within the app's ecosystem. *This demonstrates proactive security design.*
-* **Secure Code Review Policy:** Outlines the mandatory security checklist and dual-developer review process applied to all private code commits, strictly following guidelines like **OWASP** principles.
-* **Vulnerability Disclosure Policy:** A public document detailing how security researchers can responsibly disclose vulnerabilities found in any public component of the app.
+* **Tamper Detection Logic:** Documentation of cryptographic methods (e.g., hashing and ledger models) used to establish an immutable **Chain of Custody** for digital assets and data logs.
+* **Data Export Verification:** Protocols detailing the secure packaging and verification procedures for sharing high-integrity data with third parties or for investigative review.
+* **Secure Deletion Policies:** Standards for permanently destroying sensitive data across systems (e.g., mobile clients, servers) to mitigate risk of exposure.
 
 ***
 
-## III. 📱 Mobile Application Security
+## II. 🚨 Threat Governance & Assurance
 
-This details the specific security controls for the client-side, essential for protecting evidence at the point of capture.
+This showcases your expertise in strategic, managerial security practices (Threat Modeling, Policy, and Review).
 
-* **Secure Mobile Storage Protocol:** Publicly references protocols for leveraging device-native secure storage (e.g., **iOS Keychain, Android Keystore**) to protect locally collected evidence before synchronization.
-* **Sensitive Data Masking:** Policies for masking or redacting personally identifiable information (PII) and protected health information (PHI) within development environments, aligning with your $\text{HIPAA}$-modeled data standards.
+* **Adversarial Threat Modeling:** Documentation of methodologies used to systematically identify and mitigate risks related to system integrity, repudiation, and privilege escalation (e.g., STRIDE analysis).
+* **Secure Code Review Policy:** Outlines the mandatory security checklist, peer-review process, and coding standards strictly enforced to prevent common application-layer vulnerabilities ($\text{OWASP}$ adherence).
+* **Vulnerability Disclosure Policy:** A template policy detailing how security researchers can responsibly disclose vulnerabilities found in any public or accessible component of a managed system.
+
+***
+
+## III. 📱 System Hardening & Controls
+
+This addresses the security requirements for the underlying environment and deployment pipeline.
+
+* **Principle of Least Privilege:** Standards for granular access control and continuous auditing to ensure that users and processes have only the minimum permissions necessary to perform their required tasks.
+* **Zero Trust Micro-segmentation:** Protocols for designing internal network and cloud resource segmentation, strictly limiting lateral movement within the environment.
+* **Secure Mobile Environment Controls:** Policies for protecting the client-side environment, including requirements for device-native secure storage and secure input handling.
